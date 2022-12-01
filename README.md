@@ -8,6 +8,7 @@ Purpose of this repository is splitting irregular polygon into sub polygons and 
 [#############################################################]100%....Done!
 <br />
 <b> Creating different heatmap for every sub polygon</b>
+<br />
 [##...........................................................]3%....Processing
 
 
