@@ -1,6 +1,6 @@
 # Split-polygon-on-map
 
-Purpose of this repository is splitting irregular polygon into sub polygons and create heatmap for every one of them. 
+Purpose of this repository is splitting irregular polygon into sub polygons and create heatmap for every one of them. Showing them on map with react-native-maps library in react-native
 
 ## Process
 
