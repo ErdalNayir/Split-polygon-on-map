@@ -6,7 +6,7 @@ Purpose of this repository is splitting irregular polygon into sub polygons and 
 
 <b> Splitting irregular polygon into sub polygons</b>
 [#############################################################]100%....Done!
-<hr />
+<br />
 <b> Creating different heatmap for every sub polygon</b>
 [##...........................................................]3%....Processing
 
