@@ -7,9 +7,9 @@ import { clippedTestData } from "../../utils/data";
 function PolygonArea() {
   return clippedVoronois["features"].map((data, index) => {
     var coordinates = data["geometry"]["coordinates"];
-    var polygonData = createGeoJsonPolygon(coordinates);
-
-    return <SinglePolygon key={index} data={polygonData}></SinglePolygon>;
+    var id = data.id;
+    var polygonData = createGeoJsonPolygon(coordinates, id);
+    return <SinglePolygon key={index} data={polygonData} ></SinglePolygon>;
   });
 }
 

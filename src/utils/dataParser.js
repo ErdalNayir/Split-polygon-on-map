@@ -4,11 +4,12 @@ export const getCoordinates = () => {
   return geoJsonOfUniversity["features"][0]["geometry"]["coordinates"];
 };
 
-export const createGeoJsonPolygon = (data) => {
+export const createGeoJsonPolygon = (data, id) => {
   var geojsonPolygon;
   if (data != undefined) {
     geojsonPolygon = {
       type: "FeatureCollection",
+      id: id,
       features: [
         {
           type: "Feature",
