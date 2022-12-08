@@ -1,9 +1,11 @@
+//Her alt polygonun cizildigi bilesendir
 import React, { useState } from "react";
 import { Geojson } from "react-native-maps";
 
 function SinglePolygon({ data }) {
   const [color, setColorHeatMap] = useState(0.8);
 
+  //Alt poligona tıklanınca yapılması gerekenler bu fonksiyonda belirtildi
   function onPressHandler() {
     if (color > 0.05) {
       console.log("Basıldı " + data.id);
