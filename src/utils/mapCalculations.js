@@ -11,68 +11,6 @@ import {
 import { geoJsonOfUniversity, testData } from "./data";
 import { getCoordinates, createGeoJsonPolygon } from "./dataParser";
 
-export const centerOfPolygon = () => {
-  //Find center of polygon
-  var polygonArea = polygon(getCoordinates());
-  var center = centerOfMass(polygonArea);
-
-  // result will be returned as an object
-  return {
-    longitude: center["geometry"]["coordinates"][0],
-    latitude: center["geometry"]["coordinates"][1],
-  };
-};
-
-// export const eliminateOutliner = (data) => {
-//   var bboxArea = bbox(data);
-//   var lowerPoint = [bboxArea[0], bboxArea[1]];
-//   var upperPoint = [bboxArea[2], bboxArea[3]];
-
-//   var result = createGeoJsonPolygon();
-
-//   testData["features"].forEach((data) => {
-//     var pass = 0;
-//     for (var i = 0; i < 4; i++) {
-//       var curr = data["geometry"]["coordinates"][0][i];
-
-//       if (
-//         curr[0] >= lowerPoint[0] &&
-//         curr[0] <= upperPoint[0] &&
-//         curr[1] >= lowerPoint[1] &&
-//         curr[1] <= upperPoint[1]
-//       ) {
-//         pass++;
-//       }
-//     }
-//     if (pass == 4) {
-//       result["features"].push(data);
-//     }
-//   });
-//   return result;
-// };
-
-//FOR HEATMAP
-export const createWeightedPoints = () => {
-  var weightedPoints = [];
-
-  var geoData = eliminateOutliner(geoJsonOfUniversity);
-
-  geoData["features"].forEach((data) => {
-    var polygonPart = polygon(data["geometry"]["coordinates"]);
-    var centerOfPart = centerOfMass(polygonPart);
-
-    var randomWeight = Math.floor(Math.random() * (50 - 5 + 1)) + 5;
-
-    var tempRes = {
-      longitude: centerOfPart["geometry"]["coordinates"][0],
-      latitude: centerOfPart["geometry"]["coordinates"][1],
-      weight: randomWeight,
-    };
-
-    weightedPoints.push(tempRes);
-  });
-  return weightedPoints;
-};
 
 //FOR ONE TIME USE
 export const createRandomPoint = () => {
@@ -137,9 +75,6 @@ export const createSplitPolygon = () => {
   });
   console.log(JSON.stringify(clippedVoronoi));
 };
-
-//createRandomPoint();
-
 //createSplitPolygon();
 
 export const intersectPolygons = () => {
