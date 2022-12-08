@@ -3,6 +3,7 @@ import { clippedVoronois } from "../../utils/data";
 import { createGeoJsonPolygon } from "../../utils/dataParser";
 import SinglePolygon from "../SinglePolygon/SinglePolygon";
 
+//ALT POLİGON KOORİDNANTLARI MAP İLE TEK TEK SİNGLEPOLYGON BİLEŞENİNE AKTARILMAKTA
 function PolygonArea() {
   return clippedVoronois["features"].map((data, index) => {
     var coordinates = data["geometry"]["coordinates"];
