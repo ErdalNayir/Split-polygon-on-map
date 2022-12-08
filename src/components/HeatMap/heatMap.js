@@ -2,6 +2,7 @@ import React from "react";
 import { createWeightedPoints } from "../../utils/mapCalculations";
 import { Heatmap } from "react-native-maps";
 
+//Eski kod parçaları burası ile ilgilenmeyin
 function CustomHeatMap() {
   const weightedPoints = createWeightedPoints();
   return (
