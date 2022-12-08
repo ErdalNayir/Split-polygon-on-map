@@ -11,6 +11,7 @@ import {
 import { geoJsonOfUniversity, testData } from "./data";
 import { getCoordinates, createGeoJsonPolygon } from "./dataParser";
 
+//POLİGON BÖLME VE DİĞER HARİTA İŞLEMLERİ BU SCRİPTE YAPILMAKTADIR
 
 //FOR ONE TIME USE
 export const createRandomPoint = () => {
@@ -27,6 +28,7 @@ export const createRandomPoint = () => {
   return points;
 };
 
+//ALT POLİGON OLUŞTURMA FONKSİYONU
 export const createSplitPolygon = () => {
   var polygonBbox = bbox(geoJsonOfUniversity); //CREATE BBOX OF GEOJSON DATA
 
