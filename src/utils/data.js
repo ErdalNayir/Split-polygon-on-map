@@ -1,3 +1,4 @@
+//Universite konum bilgisi
 export const initialRegion = {
   latitude: 40.18743744728126,
   longitude: 29.129592190663057,
@@ -5,6 +6,7 @@ export const initialRegion = {
   longitudeDelta: 0.0122,
 };
 
+//Alt poligonların koordinat bilgisi
 export const clippedVoronois = {
   type: "FeatureCollection",
   features: [
@@ -126,6 +128,7 @@ export const clippedVoronois = {
   ],
 };
 
+//Üniversitenin bir bütün olarak poligon bilgisi
 export const geoJsonOfUniversity = {
   type: "FeatureCollection",
   features: [
