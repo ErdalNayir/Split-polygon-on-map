@@ -6,6 +6,7 @@ import styles from "./MainMapStyle";
 import CustomHeatMap from "../HeatMap/heatMap";
 import { geoJsonOfUniversity } from "../../utils/data";
 
+//Bu bileşen ekranda görünen haritayı oluşturur. 
 function MainMap() {
   const [region, setRegion] = useState(initialRegion);
 
