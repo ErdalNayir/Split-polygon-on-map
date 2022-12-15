@@ -34,6 +34,9 @@ export const clippedVoronois = {
           ],
         ],
       },
+      depth: [1, 0, 0, 2, 3, 0, 0, 0, 0, 0],
+      state: 3,
+      hue: 0.8,
     },
     {
       id:1,
@@ -53,6 +56,9 @@ export const clippedVoronois = {
           ],
         ],
       },
+      depth: [1, 0, 0, 2, 3, 0, 0, 0, 0, 0],
+      state: 3,
+      hue: 0.8,
     },
     {
       id:2,
@@ -75,6 +81,9 @@ export const clippedVoronois = {
           ],
         ],
       },
+      depth: [1, 0, 0, 2, 3, 0, 0, 0, 0, 0],
+      state: 3,
+      hue: 0.8,
     },
     {
       id:3,
@@ -95,6 +104,9 @@ export const clippedVoronois = {
           ],
         ],
       },
+      depth: [1, 0, 0, 2, 3, 0, 0, 0, 0, 0],
+      state: 3,
+      hue: 0.8,
     },
     {
       id:4,
@@ -124,6 +136,9 @@ export const clippedVoronois = {
           ],
         ],
       },
+      depth: [1, 0, 0, 2, 3, 0, 0, 0, 0, 0],
+      state: 3,
+      hue: 0.8,
     },
   ],
 };
