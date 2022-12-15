@@ -9,7 +9,7 @@ function PolygonArea() {
     var coordinates = data["geometry"]["coordinates"];
     var id = data.id;
     var polygonData = createGeoJsonPolygon(coordinates, id);
-    return <SinglePolygon key={index} data={polygonData}></SinglePolygon>;
+    return <SinglePolygon key={index} data={polygonData} hue={data["hue"]}></SinglePolygon>;
   });
 }
 
