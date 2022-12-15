@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import { Geojson } from "react-native-maps";
 
-function SinglePolygon({ data }) {
-  const [color, setColorHeatMap] = useState(0.8);
+function SinglePolygon({ data,hue }) {
+  const [color, setColorHeatMap] = useState(hue);
 
   //Alt poligona tıklanınca yapılması gerekenler bu fonksiyonda belirtildi
   function onPressHandler() {
